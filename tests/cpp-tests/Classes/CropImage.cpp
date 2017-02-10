@@ -275,11 +275,13 @@ void CropImage::cropImage(const std::function<void(const std::string&)>& callbac
 			callback(fullPath);
             
             //refresh image
-            
             Director::getInstance()->getTextureCache()->reloadTexture(fullPath);
             Texture2D * texture = TextureCache::sharedTextureCache()->addImage(fullPath);
             m_sprite->setTexture(texture);
             m_sprite->setTextureRect(Rect(0,0, texture->getContentSize().width, texture->getContentSize().height));
+            auto s = Director::getInstance()->getWinSize();
+            m_scale = s.width / m_sprite->getContentSize().width;
+            m_sprite->setScale(m_scale);
         };
 		auto _schedule = Director::getInstance()->getRunningScene()->getScheduler();
 		_schedule->schedule(scheduleCallback, this, 0.0f, 0, 0.0f, false, "crop");
