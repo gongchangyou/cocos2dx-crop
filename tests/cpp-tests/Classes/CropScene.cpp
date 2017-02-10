@@ -19,17 +19,18 @@ bool CropScene::init(){
     auto label = Label::createWithTTF(ttfConfig, "Click me to crop");
     label->setColor(Color3B::RED);
     auto menuItem = MenuItemLabel::create(label, std::bind(&CropScene::crop, this));
-    auto menu = Menu::create(menuItem, nullptr);
+    m_menu = Menu::create(menuItem, nullptr);
     
-    menu->setPosition(Vec2(300,50));
+    m_menu->setPosition(Vec2(300,50));
     menuItem->setPosition(Point::ZERO);
     
-    this->addChild(menu, 1);
+    this->addChild(m_menu, 1);
     
     return true;
 }
 
 void CropScene::crop(){
+    m_menu->setVisible(false);
     auto callback = [&](const std::string & filePath){
     };
     m_cropImage->cropImage(callback);

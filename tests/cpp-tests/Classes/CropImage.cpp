@@ -34,9 +34,7 @@ CropImage* CropImage::create(const std::string& filename)
 bool CropImage::initWithFile(const std::string & filename) {
 	m_fileName = filename;
 	m_drawNode = DrawNode::create();
-	this->addChild(m_drawNode);
-
-	m_drawNode->setPosition(Vec2(0,0));
+    this->addChild(m_drawNode);
 	
 	//touch
 	this->setTouchEnabled(true);
@@ -259,8 +257,8 @@ void CropImage::cropImage(const std::function<void(const std::string&)>& callbac
 //    float bottom =Edge::BOTTOM_INSTANCE->getCoordinate();
 	
 	RenderTexture * renderTexture = RenderTexture::create(Edge::getWidth() / m_scale, Edge::getHeight() / m_scale);
-    float originY = m_sprite->getContentSize().height;
-    auto spriteTmp = Sprite::create(m_fileName, Rect(left/m_scale , originY - top/m_scale,  Edge::getWidth()/m_scale, Edge::getHeight()/m_scale));
+    float originY = m_sprite->getContentSize().height * m_scale;
+    auto spriteTmp = Sprite::create(m_fileName, Rect(left/m_scale , (originY - top)/m_scale,  Edge::getWidth()/m_scale, Edge::getHeight()/m_scale));
 	spriteTmp->setAnchorPoint(Point::ZERO);
 	
 	renderTexture->beginWithClear(0.0f, 0.0f, 0.0f, 0.0f);
@@ -282,6 +280,8 @@ void CropImage::cropImage(const std::function<void(const std::string&)>& callbac
             auto s = Director::getInstance()->getWinSize();
             m_scale = s.width / m_sprite->getContentSize().width;
             m_sprite->setScale(m_scale);
+            mImageRect = m_sprite->getTextureRect();
+            initCropWindow(Rect(m_sprite->getPositionX(), m_sprite->getPositionY(), mImageRect.size.width * m_scale, mImageRect.size.height * m_scale));
         };
 		auto _schedule = Director::getInstance()->getRunningScene()->getScheduler();
 		_schedule->schedule(scheduleCallback, this, 0.0f, 0, 0.0f, false, "crop");

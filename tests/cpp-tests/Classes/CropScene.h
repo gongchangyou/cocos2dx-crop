@@ -19,5 +19,6 @@ private:
     bool init();
     void crop();
     CropImage * m_cropImage;
+    Menu * m_menu;
 };
 #endif /* CropScene_hpp */
