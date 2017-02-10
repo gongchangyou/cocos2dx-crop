@@ -8,7 +8,7 @@
 
 #ifndef CropScene_h
 #define CropScene_h
-
+#include "CropImage.h"
 using namespace cocos2d;
 
 #import "cocos2d.h"
@@ -17,5 +17,7 @@ public:
     CREATE_FUNC(CropScene);
 private:
     bool init();
+    void crop();
+    CropImage * m_cropImage;
 };
 #endif /* CropScene_hpp */

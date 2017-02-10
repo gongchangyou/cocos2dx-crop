@@ -35,6 +35,14 @@
 		527B1F3519EF9CF8000A1F82 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 527B1F3319EF9CF8000A1F82 /* Default-736h@3x.png */; };
 		52B47A341A534B2B004E4C60 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B47A331A534B2B004E4C60 /* Security.framework */; };
 		810D6C941E4E10170023BF0A /* CropScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 810D6C921E4E10170023BF0A /* CropScene.cpp */; };
+		810D6CAA1E4E13760023BF0A /* CropImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 810D6C951E4E13760023BF0A /* CropImage.cpp */; };
+		810D6CAB1E4E13760023BF0A /* Edge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 810D6C9E1E4E13760023BF0A /* Edge.cpp */; };
+		810D6CAC1E4E13760023BF0A /* HandleHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 810D6CA11E4E13760023BF0A /* HandleHelper.cpp */; };
+		810D6CAD1E4E13760023BF0A /* AspectRatioUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 810D6CA31E4E13760023BF0A /* AspectRatioUtil.cpp */; };
+		810D6CAE1E4E13760023BF0A /* HandleUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 810D6CA51E4E13760023BF0A /* HandleUtil.cpp */; };
+		810D6CAF1E4E13760023BF0A /* MathUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 810D6CA71E4E13760023BF0A /* MathUtil.cpp */; };
+		810D6CB11E4E14120023BF0A /* butterfly.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 810D6CB01E4E14120023BF0A /* butterfly.jpg */; };
+		810D6CB61E4E1F720023BF0A /* arial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 810D6CB51E4E1F720023BF0A /* arial.ttf */; };
 		A07A521E1783A1D20073F6A7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C6482E165F399D007D4F18 /* libz.dylib */; };
 		A07A521F1783A1D20073F6A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C64832165F3AFD007D4F18 /* Foundation.framework */; };
 		A07A52201783A1D20073F6A7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C6482C165F3988007D4F18 /* AudioToolbox.framework */; };
@@ -208,6 +216,26 @@
 		52B47A331A534B2B004E4C60 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		810D6C921E4E10170023BF0A /* CropScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CropScene.cpp; sourceTree = "<group>"; };
 		810D6C931E4E10170023BF0A /* CropScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CropScene.h; sourceTree = "<group>"; };
+		810D6C951E4E13760023BF0A /* CropImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CropImage.cpp; sourceTree = "<group>"; };
+		810D6C961E4E13760023BF0A /* CropImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CropImage.h; sourceTree = "<group>"; };
+		810D6C981E4E13760023BF0A /* CenterHandleHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterHandleHelper.h; sourceTree = "<group>"; };
+		810D6C991E4E13760023BF0A /* CornerHandleHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CornerHandleHelper.h; sourceTree = "<group>"; };
+		810D6C9A1E4E13760023BF0A /* HandleHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandleHelper.h; sourceTree = "<group>"; };
+		810D6C9B1E4E13760023BF0A /* HorizontalHandleHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalHandleHelper.h; sourceTree = "<group>"; };
+		810D6C9C1E4E13760023BF0A /* VerticalHandleHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalHandleHelper.h; sourceTree = "<group>"; };
+		810D6C9E1E4E13760023BF0A /* Edge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Edge.cpp; sourceTree = "<group>"; };
+		810D6C9F1E4E13760023BF0A /* Edge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Edge.h; sourceTree = "<group>"; };
+		810D6CA01E4E13760023BF0A /* EdgePair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EdgePair.h; sourceTree = "<group>"; };
+		810D6CA11E4E13760023BF0A /* HandleHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HandleHelper.cpp; sourceTree = "<group>"; };
+		810D6CA31E4E13760023BF0A /* AspectRatioUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AspectRatioUtil.cpp; sourceTree = "<group>"; };
+		810D6CA41E4E13760023BF0A /* AspectRatioUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AspectRatioUtil.h; sourceTree = "<group>"; };
+		810D6CA51E4E13760023BF0A /* HandleUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HandleUtil.cpp; sourceTree = "<group>"; };
+		810D6CA61E4E13760023BF0A /* HandleUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandleUtil.h; sourceTree = "<group>"; };
+		810D6CA71E4E13760023BF0A /* MathUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MathUtil.cpp; sourceTree = "<group>"; };
+		810D6CA81E4E13760023BF0A /* MathUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathUtil.h; sourceTree = "<group>"; };
+		810D6CA91E4E13760023BF0A /* PaintUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaintUtil.h; sourceTree = "<group>"; };
+		810D6CB01E4E14120023BF0A /* butterfly.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = butterfly.jpg; path = "../tests/cpp-tests/Resources/butterfly.jpg"; sourceTree = "<group>"; };
+		810D6CB51E4E1F720023BF0A /* arial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = arial.ttf; path = "../tests/cpp-tests/Resources/arial.ttf"; sourceTree = "<group>"; };
 		826294421AAF071500CB7CF7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		A035A71117822E9E00987F6C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		A07A52291783A1D20073F6A7 /* cpp-tests iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cpp-tests iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -300,6 +328,11 @@
 		1AC3592418CECF0A00F37B72 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				810D6C951E4E13760023BF0A /* CropImage.cpp */,
+				810D6C961E4E13760023BF0A /* CropImage.h */,
+				810D6C971E4E13760023BF0A /* handle */,
+				810D6C9D1E4E13760023BF0A /* edge */,
+				810D6CA21E4E13760023BF0A /* util */,
 				810D6C921E4E10170023BF0A /* CropScene.cpp */,
 				810D6C931E4E10170023BF0A /* CropScene.h */,
 				1AC3593418CECF0A00F37B72 /* AppDelegate.cpp */,
@@ -365,6 +398,8 @@
 		1AC35CA818CED83500F37B72 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				810D6CB51E4E1F720023BF0A /* arial.ttf */,
+				810D6CB01E4E14120023BF0A /* butterfly.jpg */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -464,6 +499,43 @@
 				507B42111C31BEA70067B53E /* libcocos2d tvOS.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		810D6C971E4E13760023BF0A /* handle */ = {
+			isa = PBXGroup;
+			children = (
+				810D6C981E4E13760023BF0A /* CenterHandleHelper.h */,
+				810D6C991E4E13760023BF0A /* CornerHandleHelper.h */,
+				810D6C9A1E4E13760023BF0A /* HandleHelper.h */,
+				810D6C9B1E4E13760023BF0A /* HorizontalHandleHelper.h */,
+				810D6C9C1E4E13760023BF0A /* VerticalHandleHelper.h */,
+			);
+			path = handle;
+			sourceTree = "<group>";
+		};
+		810D6C9D1E4E13760023BF0A /* edge */ = {
+			isa = PBXGroup;
+			children = (
+				810D6C9E1E4E13760023BF0A /* Edge.cpp */,
+				810D6C9F1E4E13760023BF0A /* Edge.h */,
+				810D6CA01E4E13760023BF0A /* EdgePair.h */,
+				810D6CA11E4E13760023BF0A /* HandleHelper.cpp */,
+			);
+			path = edge;
+			sourceTree = "<group>";
+		};
+		810D6CA21E4E13760023BF0A /* util */ = {
+			isa = PBXGroup;
+			children = (
+				810D6CA31E4E13760023BF0A /* AspectRatioUtil.cpp */,
+				810D6CA41E4E13760023BF0A /* AspectRatioUtil.h */,
+				810D6CA51E4E13760023BF0A /* HandleUtil.cpp */,
+				810D6CA61E4E13760023BF0A /* HandleUtil.h */,
+				810D6CA71E4E13760023BF0A /* MathUtil.cpp */,
+				810D6CA81E4E13760023BF0A /* MathUtil.h */,
+				810D6CA91E4E13760023BF0A /* PaintUtil.h */,
+			);
+			path = util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -607,10 +679,12 @@
 				1AC35C8A18CECF1400F37B72 /* Default@2x.png in Resources */,
 				1AC35C9018CECF1400F37B72 /* Icon-29.png in Resources */,
 				1AC35C8818CECF1400F37B72 /* Default-568h@2x.png in Resources */,
+				810D6CB61E4E1F720023BF0A /* arial.ttf in Resources */,
 				1AC35C9518CECF1400F37B72 /* Icon-72.png in Resources */,
 				1AC35C9118CECF1400F37B72 /* Icon-40.png in Resources */,
 				1AC35C8B18CECF1400F37B72 /* Icon-100.png in Resources */,
 				1AC35C8C18CECF1400F37B72 /* Icon-114.png in Resources */,
+				810D6CB11E4E14120023BF0A /* butterfly.jpg in Resources */,
 				1AC35C9318CECF1400F37B72 /* Icon-57.png in Resources */,
 				1AC35C8F18CECF1400F37B72 /* Icon-152.png in Resources */,
 				1AC35C9718CECF1400F37B72 /* Icon-80.png in Resources */,
@@ -630,9 +704,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				810D6C941E4E10170023BF0A /* CropScene.cpp in Sources */,
+				810D6CAE1E4E13760023BF0A /* HandleUtil.cpp in Sources */,
+				810D6CAA1E4E13760023BF0A /* CropImage.cpp in Sources */,
+				810D6CAD1E4E13760023BF0A /* AspectRatioUtil.cpp in Sources */,
 				1AC35C8718CECF1400F37B72 /* testsAppDelegate.mm in Sources */,
 				1AC35B2A18CECF0C00F37B72 /* AppDelegate.cpp in Sources */,
 				1AC35C9818CECF1400F37B72 /* main.m in Sources */,
+				810D6CAF1E4E13760023BF0A /* MathUtil.cpp in Sources */,
+				810D6CAC1E4E13760023BF0A /* HandleHelper.cpp in Sources */,
+				810D6CAB1E4E13760023BF0A /* Edge.cpp in Sources */,
 				1AC35C8618CECF1400F37B72 /* RootViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
