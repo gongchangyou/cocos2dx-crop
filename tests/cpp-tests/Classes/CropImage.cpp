@@ -54,7 +54,8 @@ bool CropImage::initWithFile(const std::string & filename) {
 	m_sprite->setScale(m_scale);
 
     m_sprite->setAnchorPoint(Point::ZERO);
-    m_sprite->setPosition(Point::ZERO);
+    m_posY = 50;
+    m_sprite->setPositionY(m_posY);
 
 	this->addChild(m_sprite, -1);
 	mImageRect = m_sprite->getTextureRect();
@@ -257,7 +258,7 @@ void CropImage::cropImage(const std::function<void(const std::string&)>& callbac
 //    float bottom =Edge::BOTTOM_INSTANCE->getCoordinate();
 	
 	RenderTexture * renderTexture = RenderTexture::create(Edge::getWidth() / m_scale, Edge::getHeight() / m_scale);
-    float originY = m_sprite->getContentSize().height * m_scale;
+    float originY = m_sprite->getContentSize().height * m_scale + m_posY;
     auto spriteTmp = Sprite::create(m_fileName, Rect(left/m_scale , (originY - top)/m_scale,  Edge::getWidth()/m_scale, Edge::getHeight()/m_scale));
 	spriteTmp->setAnchorPoint(Point::ZERO);
 	

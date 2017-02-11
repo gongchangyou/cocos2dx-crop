@@ -11,6 +11,7 @@ public:
 	void cropImage(const std::function<void(const std::string&)>& callback);
 	CropImage();
 	virtual ~CropImage();
+    void setPosY(float posY){ m_posY = posY;}
 private:
 	float m_scale;
 	std::string m_fileName;

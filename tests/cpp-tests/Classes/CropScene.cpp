@@ -8,12 +8,13 @@
 
 #include "CropScene.h"
 
+const Size RESOURCE_SIZE = Size(960, 640);
+
 bool CropScene::init(){
     m_cropImage = CropImage::create("butterfly.jpg");
     m_cropImage->setAnchorPoint(Point::ZERO);
-    m_cropImage->setPosition(Point::ZERO);
-    this->addChild(m_cropImage, 0);
     
+    this->addChild(m_cropImage, 0);
     //Add crop button.
     TTFConfig ttfConfig("arial.ttf", 20);
     auto label = Label::createWithTTF(ttfConfig, "Click me to crop");
