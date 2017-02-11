@@ -41,8 +41,8 @@
 		810D6CAD1E4E13760023BF0A /* AspectRatioUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 810D6CA31E4E13760023BF0A /* AspectRatioUtil.cpp */; };
 		810D6CAE1E4E13760023BF0A /* HandleUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 810D6CA51E4E13760023BF0A /* HandleUtil.cpp */; };
 		810D6CAF1E4E13760023BF0A /* MathUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 810D6CA71E4E13760023BF0A /* MathUtil.cpp */; };
-		810D6CB11E4E14120023BF0A /* butterfly.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 810D6CB01E4E14120023BF0A /* butterfly.jpg */; };
 		810D6CB61E4E1F720023BF0A /* arial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 810D6CB51E4E1F720023BF0A /* arial.ttf */; };
+		810D6CBC1E4E9F8E0023BF0A /* butterfly.png in Resources */ = {isa = PBXBuildFile; fileRef = 810D6CBB1E4E9F8E0023BF0A /* butterfly.png */; };
 		A07A521E1783A1D20073F6A7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C6482E165F399D007D4F18 /* libz.dylib */; };
 		A07A521F1783A1D20073F6A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C64832165F3AFD007D4F18 /* Foundation.framework */; };
 		A07A52201783A1D20073F6A7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C6482C165F3988007D4F18 /* AudioToolbox.framework */; };
@@ -234,8 +234,8 @@
 		810D6CA71E4E13760023BF0A /* MathUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MathUtil.cpp; sourceTree = "<group>"; };
 		810D6CA81E4E13760023BF0A /* MathUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathUtil.h; sourceTree = "<group>"; };
 		810D6CA91E4E13760023BF0A /* PaintUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaintUtil.h; sourceTree = "<group>"; };
-		810D6CB01E4E14120023BF0A /* butterfly.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = butterfly.jpg; path = "../tests/cpp-tests/Resources/butterfly.jpg"; sourceTree = "<group>"; };
 		810D6CB51E4E1F720023BF0A /* arial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = arial.ttf; path = "../tests/cpp-tests/Resources/arial.ttf"; sourceTree = "<group>"; };
+		810D6CBB1E4E9F8E0023BF0A /* butterfly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = butterfly.png; path = "../tests/cpp-tests/Resources/butterfly.png"; sourceTree = "<group>"; };
 		826294421AAF071500CB7CF7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		A035A71117822E9E00987F6C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		A07A52291783A1D20073F6A7 /* cpp-tests iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cpp-tests iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -398,8 +398,8 @@
 		1AC35CA818CED83500F37B72 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				810D6CBB1E4E9F8E0023BF0A /* butterfly.png */,
 				810D6CB51E4E1F720023BF0A /* arial.ttf */,
-				810D6CB01E4E14120023BF0A /* butterfly.jpg */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -674,6 +674,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AC35C8E18CECF1400F37B72 /* Icon-144.png in Resources */,
+				810D6CBC1E4E9F8E0023BF0A /* butterfly.png in Resources */,
 				1AC35C9218CECF1400F37B72 /* Icon-50.png in Resources */,
 				1AC35C9618CECF1400F37B72 /* Icon-76.png in Resources */,
 				1AC35C8A18CECF1400F37B72 /* Default@2x.png in Resources */,
@@ -684,7 +685,6 @@
 				1AC35C9118CECF1400F37B72 /* Icon-40.png in Resources */,
 				1AC35C8B18CECF1400F37B72 /* Icon-100.png in Resources */,
 				1AC35C8C18CECF1400F37B72 /* Icon-114.png in Resources */,
-				810D6CB11E4E14120023BF0A /* butterfly.jpg in Resources */,
 				1AC35C9318CECF1400F37B72 /* Icon-57.png in Resources */,
 				1AC35C8F18CECF1400F37B72 /* Icon-152.png in Resources */,
 				1AC35C9718CECF1400F37B72 /* Icon-80.png in Resources */,

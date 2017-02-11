@@ -11,7 +11,7 @@
 const Size RESOURCE_SIZE = Size(960, 640);
 
 bool CropScene::init(){
-    m_cropImage = CropImage::create("butterfly.jpg");
+    m_cropImage = CropImage::create("butterfly.png");
     m_cropImage->setAnchorPoint(Point::ZERO);
     
     this->addChild(m_cropImage, 0);
